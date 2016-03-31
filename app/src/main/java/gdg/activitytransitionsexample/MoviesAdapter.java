@@ -34,7 +34,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MoviesView
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onMovieClickListener.onMovieClick(movies.get(viewHolder.getAdapterPosition()));
+                onMovieClickListener.onMovieClick(movies.get(viewHolder.getAdapterPosition()), viewHolder.ivMovieCover);
             }
         });
 
@@ -73,6 +73,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MoviesView
     }
 
     public interface OnMovieClickListener {
-        void onMovieClick(Movie movie);
+        void onMovieClick(Movie movie, ImageView ivMovieCover);
     }
 }
