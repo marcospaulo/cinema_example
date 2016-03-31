@@ -1,10 +1,14 @@
 package gdg.activitytransitionsexample;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Explode;
+import android.transition.Slide;
+import android.view.Gravity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -25,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onMovieClick(Movie movie) {
                 Intent intent = MovieDetailActivity.newIntent(MainActivity.this, movie);
-                startActivity(intent);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         }));
 

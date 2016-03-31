@@ -3,8 +3,6 @@ package gdg.activitytransitionsexample;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.v4.media.MediaMetadataCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -35,7 +33,7 @@ public class MovieDetailActivity extends AppCompatActivity {
     @Bind(R.id.tv_movie_description)
     TextView tvMovieDescription;
 
-    public static Intent newIntent(Activity fromActivity, Movie movie){
+    public static Intent newIntent(Activity fromActivity, Movie movie) {
         Intent intent = new Intent(fromActivity, MovieDetailActivity.class);
         intent.putExtra(EXTRA_MOVIE, movie);
         return intent;
@@ -57,6 +55,5 @@ public class MovieDetailActivity extends AppCompatActivity {
         tvMovieTitle.setText(movie.name);
         tvMovieSubtitle.setText(movie.subtitle);
         tvMovieDescription.setText(movie.description);
-
     }
 }
