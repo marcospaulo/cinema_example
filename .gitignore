@@ -1,0 +1,34 @@
+# Mac OS X
+.DS_Store
+
+# Android project
+.gradle
+.android
+local.properties
+.idea/
+*.iml
+caches/
+native/
+build/
+captures/
+
+# Crashlytics
+crashlytics-build.properties
+com_crashlytics_export_strings.xml
+
+#Itch
+Sobeys/generated-src
+
+Gemfil/
+native/
+build/
+captures/
+
+# Crashlytics
+crashlytics-build.properties
+com_crashlytics_export_strings.xml
+
+#Itch
+Sobeys/generated-src
+
+Gemfile.lock.lock

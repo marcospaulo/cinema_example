@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:background="@drawable/batmanvssuperman_banner" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:elevation="0dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:paddingLeft="128dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_movie_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    tools:text="Batman v Superman: Dawn of Justice"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_movie_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="June 2013 PG 142 minutes" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_movie_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_movie_subtitle"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.3"
+                android:maxLines="4"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/iv_movie_cover"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-30dp"
+        android:elevation="10dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/batmanvssuperman_cover" />
+
+
+</RelativeLayout>

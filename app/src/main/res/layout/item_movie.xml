@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_margin="8dp"
+    android:foreground="?selectableItemBackground"
+    android:orientation="vertical"
+    app:contentPadding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_movie_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/batmanvssuperman_cover" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_movie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:maxLines="2"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                tools:text="Batman v Superman: Dawn of Justice" />
+
+            <TextView
+                android:id="@+id/tv_movie_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="12dp"
+                tools:text="Action &amp; Adventure" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

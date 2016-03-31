@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ActivityTransitionsExample</string>
+    <string name="movies_title">Movies</string>
+</resources>
