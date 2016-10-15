@@ -1,3 +1,3 @@
 # cinema_example
-Activity Transition Example for my talk "Understanding Activity Transitions" 
-presented at GDG Montreal Android March 2016 Meet UP
+Activity Transition Example for my talk "Animation To Guide Us All Part 2" 
+presented at GDG DevFest Seattle October 2016
